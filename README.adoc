@@ -1,13 +1,13 @@
 ngWallet - Ngin GUI Wallet
-=================================
+==========================
 
 :rootdir: .
 :imagesdir: {rootdir}/images
 :toclevels: 2
 :toc:
 
-ifdef::env-github,env-browser[:badges:]
 ifdef::env-github,env-browser[:outfilesuffix: .adoc]
+endif::[]
 
 ## Development instructions
 The supported `node` version is `v6`. If you run into building errors, please make sure that you are using NodeV6 by running `node --version`. 
@@ -33,12 +33,7 @@ If ngind isn't available in your project directory, upon launching the app, it w
 be downloaded and placed in your project base dir.
 
 ##### ngWallet-cli
-If you haven't got `ngWallet-cli` already installed on your system, you can execute `./dependencies.sh`
-to automatically `rustup` and use `cargo` to install `ngWallet-cli` and move it to the
-project's base dir. Note: this command is idempotent __for rust and cargo__ (it won't
-try to install cargo if you've already got it), but it will
-use cargo's `-f` flag to force install `ngWallet-cli` and copy that version to the
-project directory.
+If you haven't got `ngWallet-cli` already installed on your system, you can download the binary, or git clone from https://github.com/NginProject/ngWallet-js and then run `cargo build --release` in directory. 
 
 ### Run for development
 
