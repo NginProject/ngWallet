@@ -1,0 +1,16 @@
+bin/
+node_modules/
+*.iml
+.idea/
+release/
+npm-debug.log
+app/
+dist/
+logs/
+coverage/
+flow-typed/
+
+ngind.exe
+ngWallet-cli.exe
+
+package-lock.json
