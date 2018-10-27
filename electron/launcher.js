@@ -13,7 +13,7 @@ class LocalGeth {
   constructor(bin, logDir, network, rpcPort) {
     this.bin = bin;
     this.logDir = logDir;
-    this.network = network || 'morden';
+    this.network = network || 'mainnet';
     this.rpcPort = rpcPort || 52521;
   }
 

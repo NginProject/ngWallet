@@ -39,8 +39,6 @@ class MultiCreateTransaction extends React.Component {
     accountAddress: PropTypes.string,
     txFee: PropTypes.string.isRequired,
     txFeeFiat: PropTypes.string.isRequired,
-    data: PropTypes.object,
-    typedData: PropTypes.object,
   };
 
   constructor() {
@@ -86,7 +84,7 @@ class MultiCreateTransaction extends React.Component {
   }
 
   onChangeGasLimit(value) {
-    this.setTransaction('gasLimit', value || DEFAULT_GAS_LIMIT);
+    this.setTransaction(DEFAULT_GAS_LIMIT);
   }
 
   onChangeAmount(amount) {
