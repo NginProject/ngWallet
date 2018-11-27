@@ -8,8 +8,20 @@ export const Networks = [
       id: 111,
       name: 'mainnet',
     },
-    title: 'Mainnet',
+    title: 'Local Mainnet',
     id: 'local/mainnet',
+  },
+  {
+    geth: {
+      type: 'remote',
+      url: 'https://node1.ngin.cash:443',
+    },
+    chain: {
+      id: 111,
+      name: 'mainnet',
+    },
+    title: 'Explorer Mainnet',
+    id: 'remote/mainnet',
   }
 ];
 

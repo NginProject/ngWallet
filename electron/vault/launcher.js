@@ -30,7 +30,7 @@ class LocalConnector {
   migrateIfNotExists() {
     return new Promise((resolve, reject) => {
       const bin = this.emeraldExecutable();
-      log.debug('Checking if ngWallet exists:', bin);
+      log.debug('Checking if ngWallet-cli exists:', bin);
       checkExists(bin).then((exists) => {
         if (!exists) {
           log.debug('ngWallet-cli not found');
@@ -60,7 +60,7 @@ class LocalConnector {
           });
         } else {
           // Assuming the emerald found is valid (perms, etc).
-          log.debug('OK: ngWallet exists: ', bin);
+          log.debug('OK: ngWallet-cli exists: ', bin);
           resolve(true);
         }
       });

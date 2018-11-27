@@ -8,6 +8,11 @@ import history from '../wallet/history';
 
 const log = createLogger('networkActions');
 
+const handleFailedToFetch = (err) => {
+  if (err.message.includes('Failed to fetch')) { return; }
+  throw err;
+};
+
 export function switchChain({ chain, chainId }) {
   return (dispatch, getState) => {
     dispatch({

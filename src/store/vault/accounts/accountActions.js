@@ -223,8 +223,6 @@ function verifySender(expected) {
 
 function signTx(api, tx: Transaction, passphrase: string, chain: string) {
   return api.emerald.signTransaction(tx, passphrase, chain);
-  // TODO: use geth to replace emerald
-  //api.geth.eth.signTransaction(tx, passphrase, chain);
 }
 
 export function sendTransaction(from: string, passphrase: string, to: ?string, gas: string,
@@ -246,7 +244,7 @@ export function sendTransaction(from: string, passphrase: string, to: ?string, g
       .then((tx) =>
         signTx(api, tx, passPhrase, chain)
           .then(unwrap)
-          .then(verifySender(from))
+          // .then(verifySender(from))
           .then((signed) => api.geth.eth.sendRawTransaction(signed))
           .then(onTxSend(dispatch, tx))
       )

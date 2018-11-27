@@ -8,3 +8,14 @@ export const MainnetLocal = {
     name: 'mainnet',
   },
 };
+
+export const Node1 = {
+  geth: {
+    type: 'remote',
+    url: 'https://node1.ngin.cash:443',
+  },
+  chain: {
+    id: 111,
+    name: 'mainnet',
+  },
+};

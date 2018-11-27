@@ -11,15 +11,9 @@ const DefaultGeth = {
         {
           type: 'https',
           pack: 'zip',
-          url: 'https://github.com/NginProject/ngind/releases/download/v0.1.3/ngind-windows-amd64.zip',
+          url: 'https://github.com/NginProject/ngind/releases/download/v0.1.4/ngind-windows-amd64.zip',
         },
-      ],
-      signatures: [
-        {
-          type: 'pgp',
-          url: 'https://github.com/NginProject/ngind/releases/download/v0.1.3/ngind-windows-amd64.zip.asc',
-        },
-      ],
+      ]
     },
     {
       platform: 'linux',
@@ -27,13 +21,7 @@ const DefaultGeth = {
         {
           type: 'https',
           pack: 'zip',
-          url: 'https://github.com/NginProject/ngind/releases/download/v0.1.3/ngind-linux-amd64.zip',
-        },
-      ],
-      signatures: [
-        {
-          type: 'pgp',
-          url: 'https://github.com/NginProject/ngind/releases/download/v0.1.3/ngind-linux-amd64.zip.asc',
+          url: 'https://github.com/NginProject/ngind/releases/download/v0.1.4/ngind-linux-amd64.zip',
         },
       ],
     },
