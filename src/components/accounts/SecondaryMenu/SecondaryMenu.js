@@ -91,7 +91,7 @@ export default connect(
         const fileData = {
           filename: `${address}.json`,
           mime: 'text/plain',
-          contents: result,
+          contents: JSON.stringify(result),
         };
 
         const blob = new Blob([fileData.contents], {type: fileData.mime});

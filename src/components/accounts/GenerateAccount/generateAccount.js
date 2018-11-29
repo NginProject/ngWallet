@@ -81,7 +81,7 @@ class GenerateAccount extends React.Component<Props, State> {
         const fileData = {
           filename: `${accountId}.json`,
           mime: 'text/plain',
-          contents: result,
+          contents: JSON.stringify(result),
         };
 
         // Give encrypted key file to user
