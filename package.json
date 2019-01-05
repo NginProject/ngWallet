@@ -5,7 +5,7 @@
     "email": "searchain@yandex.com"
   },
   "private": false,
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "ngWallet - GUI Wallet for Ngin",
   "main": "./electron/main.js",
   "moduleRoots": [
@@ -90,7 +90,7 @@
     "react": "16.2.0",
     "react-addons-test-utils": "^15.6.0",
     "react-bootstrap": "^0.31.2",
-    "react-dom": "16.2.0",
+    "react-dom": "16.2.1",
     "react-dropzone": "^3.12.2",
     "react-event-listener": "^0.4.5",
     "react-flexbox-grid": "2.1.2",
@@ -154,7 +154,7 @@
     "style-loader": "0.16.1",
     "url-loader": "0.5.7",
     "webpack": "2.6.1",
-    "webpack-dev-server": "2.4.2"
+    "webpack-dev-server": "3.1.11"
   },
   "build": {
     "appId": "com.nginprojecy.ngwallet",
